@@ -1,4 +1,16 @@
-# Created by .ignore support plugin (hsz.mobi)
+### VirtualEnv template
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.venv
+pip-selfcheck.json
 ### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -9,10 +21,12 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-.Python
+/src
+/bin
 env/
 build/
 develop-eggs/
+old-eggs/
 dist/
 downloads/
 eggs/
@@ -24,10 +38,7 @@ sdist/
 var/
 *.egg-info/
 .installed.cfg
-.mr.developer.cfg
 *.egg
-bin/
-src/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -48,6 +59,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *,cover
+.hypothesis/
 
 # Translations
 *.mo
@@ -55,6 +67,13 @@ coverage.xml
 
 # Django stuff:
 *.log
+local_settings.py
+
+# Flask instance folder
+instance/
+
+# Scrapy stuff:
+.scrapy
 
 # Sphinx documentation
 docs/_build/
@@ -62,14 +81,28 @@ docs/_build/
 # PyBuilder
 target/
 
-# Xtra
-node_modules/
-twistd.pid
-trinity.conf
-cert/
-trinity.pem
-/project
-/setup.cfg
-/components
-/old-eggs/
-/old/
+# IPython Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# dotenv
+.env
+
+# virtualenv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+
+# Rope project settings
+.ropeproject
+test.py
+tmp/
+/.mr.developer.cfg
+supervisor/
