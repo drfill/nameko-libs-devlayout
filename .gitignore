@@ -21,7 +21,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-/src
+# /src
 /bin
 env/
 build/
